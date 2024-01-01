@@ -1,0 +1,31 @@
+%align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%align-flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+%font-family {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+
+%image-position {
+    position: absolute;
+    height: 25rem;
+    width: 45rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #3a5065;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &:hover {
+        border-color: #cca478;
+    }
+}

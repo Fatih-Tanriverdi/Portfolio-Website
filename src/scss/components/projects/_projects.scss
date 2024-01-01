@@ -1,0 +1,103 @@
+.personalWebSiteProjectsContainer {
+    @extend %align-center;
+    width: 100%;
+}
+
+.personalWebSiteProjects {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column !important;
+    position: relative;
+    background-color: #3a5065;
+    width: 75%;
+    height: 85rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
+}
+
+.arcanisAdminImage {
+    @extend %image-position;
+    top: 6rem;
+    left: 3rem;
+}
+
+.arcanisCustomerImage {
+    @extend %image-position;
+    top: 8rem;
+    left: 6rem;
+
+    &:hover {
+        z-index: 1;
+        border-color: #cca478;
+    }
+}
+
+.personalWebSiteProjectsContentRight {
+    margin-left: 55rem;
+    @extend %font-family;
+
+    &>h1 {
+        @extend %align-center;
+        color: #f0f1ec;
+        font-size: 3rem;
+        border-bottom: 0.4rem solid #cca478;
+    }
+
+    &>p {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        color: #f0f1ec;
+        line-height: 2.5rem;
+    }
+}
+
+.netflixMainPage {
+    @extend %image-position;
+    top: 12rem;
+    left: 3rem;
+    margin-top: 35%;
+}
+
+.netflixBody {
+    @extend %image-position;
+    top: 15rem;
+    left: 5rem;
+    margin-top: 35%;
+
+    &:hover {
+        z-index: 1;
+    }
+}
+
+.netflixAuth {
+    @extend %image-position;
+    top: 18rem;
+    left: 7rem;
+    margin-top: 35%;
+
+    &:hover {
+        z-index: 1;
+    }
+}
+
+.personalWebSiteProjectsContentNetflixLeft {
+    margin-left: 55rem;
+    @extend %font-family;
+
+    &>h1 {
+        @extend %align-center;
+        color: #f0f1ec;
+        font-size: 3rem;
+        border-bottom: 0.4rem solid #cca478;
+    }
+
+    &>p {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        color: #f0f1ec;
+        line-height: 2.5rem;
+    }
+}

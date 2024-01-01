@@ -1,0 +1,28 @@
+.personalWebSiteAboutContainer {
+    @extend %align-center;
+    width: 100%;
+}
+
+.personalWebSiteAboutContent {
+    @extend %align-center;
+    background-color: #3a5065;
+    height: 50rem;
+    width: 75%;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.personalWebSiteAboutContentLeft {
+    @extend %font-family;
+    padding: 4rem;
+
+    &>p {
+        font-size: 1.7rem;
+        color: white;
+    }
+}
+
+.personalWebSiteAboutContentRight {
+    padding: 5rem;
+}
