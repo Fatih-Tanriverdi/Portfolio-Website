@@ -20,16 +20,27 @@
     @extend %image-position;
     top: 6rem;
     left: 3rem;
+    z-index: 1;
 }
 
-.arcanisCustomerImage {
+.arcanisLoginImage {
     @extend %image-position;
-    top: 8rem;
-    left: 6rem;
+    top: 9rem;
+    left: 5rem;
 
     &:hover {
         z-index: 1;
         border-color: #cca478;
+    }
+}
+
+.arcanisCustomerImage {
+    @extend %image-position;
+    top: 12rem;
+    left: 7rem;
+
+    &:hover {
+        z-index: 2;
     }
 }
 

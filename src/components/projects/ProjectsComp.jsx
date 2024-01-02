@@ -1,10 +1,23 @@
 import React from 'react'
 import '../../scss/styles.scss'
 import { useLang } from '../../context/LangContext';
+import $ from 'jquery';
 
 const ProjectsComp = () => {
 
     const { lang } = useLang();
+
+    function rotate() {
+        var lastChild = $('.slider div:last-child').clone(); // Use $ for jQuery
+        $('.slider div').removeClass('firstSlide');
+        $('.slider div:last-child').remove();
+        $('.slider').prepend(lastChild);
+        $(lastChild).addClass('firstSlide');
+    }
+
+    window.setInterval(function () {
+        rotate();
+    }, 4000);
 
     return (
         <div className='personalWebSiteProjectsContainer' id='projects'>
@@ -13,6 +26,7 @@ const ProjectsComp = () => {
                     <div className='personalWebSiteProjectsContentLeft'>
                         <img className='arcanisCustomerImage' src='/images/Arcanis_Customer.png' alt='' />
                         <img className='arcanisAdminImage' src='/images/Arcanis_Admin.png' alt='' />
+                        <img className='arcanisLoginImage' src='/images/Arcanis_Login_Page.png' alt='' />
                     </div>
                     <div className='personalWebSiteProjectsContentRight'>
                         <h1>Arcanis</h1>
@@ -29,7 +43,7 @@ const ProjectsComp = () => {
                     <div className='personalWebSiteProjectsContentNetflixLeft'>
                         <h1>Netflix - Clone</h1>
                         <p>
-                        {lang === "en" ?
+                            {lang === "en" ?
                                 "This project is a replica of Netflix created using JavaScript, React, and Firebase. It is a web application that dynamically displays Netflix-like content and allows users to save their favorite content. Functionality for user authentication and data storage has been added using Firebase."
                                 :
                                 "Bu proje, JavaScript, React ve Firebase kullanılarak oluşturulmuş bir Netflix replikasıdır. Netflix benzeri içerikleri dinamik olarak gösteren, kullanıcıların favori içeriklerini kaydetmelerine olanak tanıyan bir web uygulamasıdır. Firebase ile kullanıcı kimlik doğrulama ve veri saklama işlevselliği eklenmiştir."

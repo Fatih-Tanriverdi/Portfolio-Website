@@ -21,29 +21,14 @@
     @extend %font-family;
     font-size: 4rem;
     color: #f0f1ec;
-}
 
-.personalBodyAboutButton {
-    @extend %align-center;
-    height: 2rem;
-    width: 11rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 2rem;
-    margin-top: 2rem;
-    padding: 3rem;
-    background-color: #182840;
-    color: white;
-    text-decoration: none;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-
-    &>i {
-        @extend %align-center;
-        margin-left: 0.5rem;
-    }
-
-    &:hover {
-        background-color: #cca478;
+    &>a {
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-decoration: none;
+        color: #f0f1ec;
+        margin-left: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     }
 }
 
@@ -51,3 +36,52 @@
     padding-left: 10rem;
 }
 
+.personalBodyAboutButton {
+    @extend %align-center;
+    background-color: #182840;
+    border: 0.3rem solid #182840;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    width: 10rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.4s linear;
+    border-radius: 3rem;
+
+    &>i {
+        @extend %align-center;
+        margin-left: 0.5rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 3rem;
+        background-color: #cca478;
+        z-index: -1;
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    }
+
+    &:hover {
+        color: #182840;
+    }
+}
+
+.aboutButton {
+
+    &::before {
+        transform: scaleX(0);
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+    }
+}

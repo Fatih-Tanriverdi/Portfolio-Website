@@ -15,7 +15,7 @@ const HeaderComp = () => {
                         <img src='/images/Website_Logo_Transparent.png' alt='Logo' />
                     </div>
                     <div className='personalWebSiteContentLinks'>
-                        <a href='#home'>{lang === "en" ? "Home" : "Anasayfa"}</a>
+                        <a className='home' href='#home'>{lang === "en" ? "Home" : "Anasayfa"}</a>
                         <a href='#projects'>{lang === "en" ? "Projects" : "Projeler"}</a>
                         <a href='#about'>{lang === "en" ? "About" : "Hakkımda"}</a>
                         <a href='#contact'>{lang === "en" ? "Contact" : "İletişim"}</a>

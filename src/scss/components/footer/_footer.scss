@@ -6,22 +6,19 @@
 .personalWebSiteFooter {
     @extend %align-center;
     flex-direction: column;
-    width: 95%;
+    width: 85%;
     height: 20rem;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    margin: 5rem 3rem;
     border-radius: 3rem;
     background-color: #3e4c59;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .personalWebSiteFooterContentBody {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @extend %align-start;
     flex-direction: column;
     margin-bottom: 2rem;
-    width: 10%;
+    width: 12%;
 
     &>a {
         @extend %align-center;
@@ -53,7 +50,6 @@
     align-items: center;
     width: 90%;
     border-top: 0.3rem solid #182840;
-    cursor: pointer;
 
     &>p {
         color: #f0f1ec;
@@ -65,12 +61,11 @@
         height: 3rem;
         width: 3rem;
         margin-top: 1rem;
+        pointer-events: none;
     }
 }
 
 .personalWebSiteFooterContentTop {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @extend %align-start;
     width: 90%;
 }

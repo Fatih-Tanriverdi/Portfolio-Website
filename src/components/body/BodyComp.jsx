@@ -19,7 +19,7 @@ const BodyComp = () => {
                             <br />
                             {lang === 'en' ? "Front End Developer" : 'Front End Developer'}
                         </b>
-                        <a href='#about' className='personalBodyAboutButton'>{lang === "en" ? "More" : "Devamı"}<i><FiMoreHorizontal /></i></a>
+                        <a href='#about' className='aboutButton personalBodyAboutButton'>{lang === "en" ? "More" : "Devamı"}<i><FiMoreHorizontal /></i></a>
                     </div>
                     <div className='personalWebSiteBodyContentRight'>
                         <img src='/images/Fatih_Tan_Emoji.png' alt='' />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../scss/styles.scss'
 import { IoIosMail, IoMdRocket } from "react-icons/io";
 import { FaMedium } from "react-icons/fa6";
@@ -7,7 +7,18 @@ import { useLang } from '../../context/LangContext';
 
 const FooterComp = () => {
 
+    const [fullYear, setFullYear] = useState("");
     const { lang } = useLang();
+
+    const getFullYear = () => {
+        const date = new Date();
+        const fullYear = date.getFullYear();
+        setFullYear(fullYear);
+    }
+
+    useEffect(() => {
+        getFullYear();
+    })
 
     return (
         <div className='personalWebSiteFooterContainer' id='contact'>
@@ -25,7 +36,7 @@ const FooterComp = () => {
                     </div>
                 </div>
                 <div className='personalWebSiteFooterContentFooter'>
-                    <p>© Fatih Tanrıverdi 2023</p>
+                    <p>© Fatih Tanrıverdi {fullYear}</p>
                     <img src='/images/Website_Logo_Gold_Preview.png' alt=''/>
                 </div>
             </div>
