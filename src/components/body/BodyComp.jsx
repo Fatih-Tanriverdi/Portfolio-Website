@@ -15,9 +15,9 @@ const BodyComp = () => {
                         <b>
                             {lang === 'en' ? 'Hi,' : 'Merhaba,'}
                             <br />
-                            {lang === 'en' ? "I'm Fatih" : 'Ben Fatih'}
+                            {lang === 'en' ? "My name is Fatih." : 'Benim adım Fatih'}
                             <br />
-                            {lang === 'en' ? "Front End Developer" : 'Front End Developer'}
+                            {lang === 'en' ? "I'm a Frontend Developer." : "Ben Frontend Developer'ım"}
                         </b>
                         <a href='#about' className='aboutButton personalBodyAboutButton'>{lang === "en" ? "More" : "Devamı"}<i><FiMoreHorizontal /></i></a>
                     </div>

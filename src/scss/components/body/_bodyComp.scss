@@ -19,8 +19,9 @@
 
 .personalWebSiteBodyContentLeft {
     @extend %font-family;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #f0f1ec;
+    margin-left: 6rem;
 
     &>a {
         transform: translate(-50%, -50%);
@@ -34,6 +35,7 @@
 
 .personalWebSiteBodyContentRight {
     padding-left: 10rem;
+    pointer-events: none;
 }
 
 .personalBodyAboutButton {
