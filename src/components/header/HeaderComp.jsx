@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../scss/styles.scss'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useLang } from '../../context/LangContext';
 
 const HeaderComp = () => {
@@ -20,12 +21,23 @@ const HeaderComp = () => {
                         <a href='#about'>{lang === "en" ? "About" : "Hakkımda"}</a>
                         <a href='#contact'>{lang === "en" ? "Contact" : "İletişim"}</a>
                     </div>
-                    <div className='personalWebSiteContentSocial'>
-                        <a href='https://github.com/Fatih-Tanriverdi' target='blank'><FaGithub /></a>
-                        <a href='https://www.linkedin.com/in/tanriverdifatih/' target='blank'><FaLinkedin /></a>
-                        <div className='personalWebSiteLanguageButtonContainer'>
-                            <button className={`personalWebSiteLanguageButtonEn ${lang === "en" ? "active" : ""}`} onClick={toggleLang}>EN</button>
-                            <button className={`personalWebSiteLanguageButtonTr ${lang === "en" ? "" : "active"}`} onClick={toggleLang}>TR</button>
+                    <div className='dropdownMenuContainer'>
+                        <div class="dropdown">
+                            <button class="dropbtn"><GiHamburgerMenu /></button>
+                            <div class="dropdown-content">
+                                <a className='home' href='#home'>{lang === "en" ? "Home" : "Anasayfa"}</a>
+                                <a href='#projects'>{lang === "en" ? "Projects" : "Projeler"}</a>
+                                <a href='#about'>{lang === "en" ? "About" : "Hakkımda"}</a>
+                                <a href='#contact'>{lang === "en" ? "Contact" : "İletişim"}</a>
+                            </div>
+                        </div>
+                        <div className='personalWebSiteContentSocial'>
+                            <a href='https://github.com/Fatih-Tanriverdi' target='blank'><FaGithub /></a>
+                            <a href='https://www.linkedin.com/in/tanriverdifatih/' target='blank'><FaLinkedin /></a>
+                            <div className='personalWebSiteLanguageButtonContainer'>
+                                <button className={`personalWebSiteLanguageButtonEn ${lang === "en" ? "active" : ""}`} onClick={toggleLang}>EN</button>
+                                <button className={`personalWebSiteLanguageButtonTr ${lang === "en" ? "" : "active"}`} onClick={toggleLang}>TR</button>
+                            </div>
                         </div>
                     </div>
                 </div>
