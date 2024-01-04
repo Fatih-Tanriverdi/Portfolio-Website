@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Gochi+Hand&family=Pacifico&family=Rock+Salt&family=Whisper&display=swap');
+
+.personalWebSiteSkillsContainer {
+    @extend %align-center;
+    width: 100%;
+}
+
+.personalWenSiteSkillsBody {
+    display: flex;
+    justify-content: center;
+    background-color: #3a5065;
+    height: 100%;
+    min-height: 50rem;
+    width: 75%;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.personalWebSiteSkillsContent {
+    @extend %align-center;
+    flex-direction: column;
+
+    &>h1 {
+        margin: 3rem;
+        color: #f0f1ec;
+
+        &>p {
+            @extend %align-center;
+            margin-top: 2rem;
+            color: #cca478
+        }
+
+        &>p>h4 {
+            color: #f0f1ec;
+            margin-left: 1rem;
+            font: bold;
+            font-size: 3rem;
+            font-family: 'Caveat Brush', cursive;
+            font-family: 'Gochi Hand', cursive;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Rock Salt', cursive;
+            font-family: 'Whisper', cursive;
+        }
+    }
+}
+
+.personalWebSiteSkillsContentProgressCard {
+
+    @extend %align-center;
+    height: 20rem;
+    width: 75%;
+    margin: 3rem;
+    border-radius: 3rem;
+    background-color: #cca478;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        border: 0.1rem solid #f0f1ec;
+    }
+}
+
+.personalWebSiteSkillsContentProgressCardLeft {
+    @extend %align-center;
+    flex-direction: column;
+    width: 25%
+}
+
+.personalWebSiteSkillsContentProgressCardRight {
+    @extend %align-center;
+    flex-direction: column;
+    width: 75%;
+
+    &>p {
+        color: #f0f1ec;
+        text-align: center;
+        margin: 3rem;
+        font-size: 1.3rem
+    }
+}
+
+.personalWebSiteSkillsContentProgressCardTitle {
+    @extend %align-center;
+
+    &>i {
+        color: #f0f1ec;
+        font-size: 2rem;
+        margin-top: 0.7rem;
+        margin-right: 0.5rem;
+    }
+
+    &>h1 {
+        color: #f0f1ec;
+    }
+}
+
+.ant-progress-text {
+    color: #3a5065 !important;
+}

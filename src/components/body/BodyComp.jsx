@@ -22,7 +22,7 @@ const BodyComp = () => {
                         <a href='#about' className='aboutButton personalBodyAboutButton'>{lang === "en" ? "More" : "Devamı"}<i><FiMoreHorizontal /></i></a>
                     </div>
                     <div className='personalWebSiteBodyContentRight'>
-                        <img src='/images/Fatih_Tan_Emoji.png' alt='' />
+                        <img src='/images/avatar_hello.png' alt='' />
                     </div>
                 </div>
             </div>

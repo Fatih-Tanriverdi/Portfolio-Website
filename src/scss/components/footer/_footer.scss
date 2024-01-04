@@ -51,10 +51,14 @@
     width: 90%;
     border-top: 0.3rem solid #182840;
 
-    &>p {
-        color: #f0f1ec;
+    &>b {
+        color: #cca478;
         font-size: 1.3rem;
         margin-top: 1rem;
+
+        &>b {
+            color: #f0f1ec;
+        }
     }
 
     &>img {

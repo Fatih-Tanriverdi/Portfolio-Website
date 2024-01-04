@@ -5,6 +5,8 @@ import BodyComp from '../../components/body/BodyComp'
 import AboutComp from '../../components/about/AboutComp'
 import FooterComp from '../../components/footer/FooterComp'
 import ProjectsComp from '../../components/projects/ProjectsComp'
+import ContactComp from '../../components/contact/ContactComp'
+import SkillsComp from '../../components/skills/SkillsComp'
 
 const Home = () => {
 
@@ -14,6 +16,8 @@ const Home = () => {
             <BodyComp />
             <AboutComp />
             <ProjectsComp />
+            <SkillsComp />
+            <ContactComp />
             <FooterComp />
         </div>
     )

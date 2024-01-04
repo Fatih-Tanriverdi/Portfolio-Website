@@ -36,7 +36,7 @@ const FooterComp = () => {
                     </div>
                 </div>
                 <div className='personalWebSiteFooterContentFooter'>
-                    <p>© Fatih Tanrıverdi {fullYear}</p>
+                    <b>© {fullYear}. <b>ALL RIGHTS RESERVED</b></b>
                     <img src='/images/Website_Logo_Gold_Preview.png' alt=''/>
                 </div>
             </div>

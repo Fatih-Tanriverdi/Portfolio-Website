@@ -1,0 +1,190 @@
+.personalWebSiteContactContainer {
+    @extend %align-center;
+    width: 100%;
+}
+
+.personalWenSiteContactBody {
+    @extend %align-center;
+    background-color: #3a5065;
+    height: 100%;
+    min-height: 50rem;
+    width: 75%;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.personalWebSiteContactContent {
+    @extend %align-center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+
+    .personalWebSiteContactContentLeft {
+        width: 50%;
+        @extend %align-center;
+
+        &>h1 {
+            @extend %align-center;
+            color: #f0f1ec;
+            border-bottom: 0.4rem solid #cca478;
+            width: 100%;
+            font: bold;
+            font-size: 4rem
+        }
+    }
+
+    .personalWebSiteContactContentRight {
+        @extend %align-center;
+        width: 50%;
+    }
+}
+
+.personalWebSiteContactContentLeft {
+    @extend %align-center;
+    flex-direction: column;
+    width: 100%;
+
+    &>h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+.personalWebSiteContactContentInputGroup {
+    @extend %align-center;
+    flex-direction: column;
+    width: 100%;
+
+    &>input {
+        height: 5rem;
+        width: 42rem;
+        border-radius: 3rem;
+        border: 0.2rem solid #3a5065;
+        background-color: #182840;
+        color: #f0f1ec;
+    }
+
+    .personalWebSiteContactMessage {
+        @extend %align-center;
+        height: 100%;
+        min-height: 15rem;
+        min-width: 42rem;
+        border-radius: 3rem;
+        border: 0.2rem solid #3a5065;
+        margin-top: 1rem;
+        background-color: #182840;
+        color: #f0f1ec;
+
+        &>textarea {
+            min-height: 12rem;
+            min-width: 38rem;
+            max-width: 38rem;
+            border: none;
+            color: #f0f1ec;
+            background-color: #182840;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #f0f1ec;
+            }
+        }
+    }
+
+    .personalWebSiteContactContentInputGroupTop {
+        @extend %align-center;
+    }
+}
+
+.personalWebSiteContactNameInput,
+.personalWebSiteContactEmail {
+    @extend %align-center;
+    height: 5rem;
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    border: 0.2rem solid #3a5065;
+    background-color: #182840;
+    color: #f0f1ec;
+
+    &>input {
+        @extend %align-center;
+        height: 3rem;
+        width: 18rem;
+        background-color: #182840;
+        color: #f0f1ec;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #f0f1ec
+        }
+    }
+}
+
+.personalWebSiteContactSubject {
+    @extend %align-center;
+    height: 5rem;
+    width: 42rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    border: 0.2rem solid #3a5065;
+    background-color: #182840;
+    color: #f0f1ec;
+
+    &>input {
+        @extend %align-center;
+        height: 4rem;
+        width: 39rem;
+        background-color: #182840;
+        border: none;
+        color: #f0f1ec;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #f0f1ec
+        }
+    }
+}
+
+.personalWebSiteContactContentButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    &>button {
+        width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #f0f1ec;
+        background-color: #cca478;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        margin: 2rem 6rem 0rem 0rem;
+
+        &:hover {
+            background-color: #182840;
+            border: 0.1rem solid #cca478;
+            box-shadow: 0px 15px 20px rgba(204, 164, 120, 0.4);
+            color: #f0f1ec;
+            transform: translateY(-7px);
+        }
+    }
+}
