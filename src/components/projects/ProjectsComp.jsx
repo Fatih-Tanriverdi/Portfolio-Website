@@ -40,6 +40,11 @@ const ProjectsComp = () => {
                     </div>
                 </div>
                 <div className='personalWebSiteProjectsContentNetflix'>
+                    <div className='personalWebSiteProjectsContentNetflixRight'>
+                        <img className='netflixAuth' src='/images/Netflix_Kullanıcı_Girişi.png' alt='' />
+                        <img className='netflixBody' src='/images/Netflix_Body.png' alt='' />
+                        <img className='netflixMainPage' src='/images/Netflix_Anasayfa.png' alt='' />
+                    </div>
                     <div className='personalWebSiteProjectsContentNetflixLeft'>
                         <h1>Netflix - Clone</h1>
                         <p>
@@ -49,11 +54,6 @@ const ProjectsComp = () => {
                                 "Bu proje, JavaScript, React ve Firebase kullanılarak oluşturulmuş bir Netflix replikasıdır. Netflix benzeri içerikleri dinamik olarak gösteren, kullanıcıların favori içeriklerini kaydetmelerine olanak tanıyan bir web uygulamasıdır. Firebase ile kullanıcı kimlik doğrulama ve veri saklama işlevselliği eklenmiştir."
                             }
                         </p>
-                    </div>
-                    <div className='personalWebSiteProjectsContentNetflixRight'>
-                        <img className='netflixAuth' src='/images/Netflix_Kullanıcı_Girişi.png' alt='' />
-                        <img className='netflixBody' src='/images/Netflix_Body.png' alt='' />
-                        <img className='netflixMainPage' src='/images/Netflix_Anasayfa.png' alt='' />
                     </div>
                 </div>
             </div>
