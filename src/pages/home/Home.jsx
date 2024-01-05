@@ -7,6 +7,7 @@ import FooterComp from '../../components/footer/FooterComp'
 import ProjectsComp from '../../components/projects/ProjectsComp'
 import ContactComp from '../../components/contact/ContactComp'
 import SkillsComp from '../../components/skills/SkillsComp'
+import ScrollButton from '../../components/scroolButton/ScroolButton'
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
             <SkillsComp />
             <ContactComp />
             <FooterComp />
+            <ScrollButton />
         </div>
     )
 }

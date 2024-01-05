@@ -17,27 +17,31 @@
 .personalWebSiteBodyContent {
     @extend %align-center;
     flex-direction: row;
+    width: 100%
 }
 
 .personalWebSiteBodyContentLeft {
+    @extend %align-center;
+    flex-direction: column;
     @extend %font-family;
+    width: 50%;
     font-size: 3.5rem;
     color: #f0f1ec;
-    margin-left: 6rem;
 
     &>a {
         transform: translate(-50%, -50%);
         text-align: center;
         text-decoration: none;
         color: #f0f1ec;
-        margin-left: 5rem;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     }
 }
 
 .personalWebSiteBodyContentRight {
+    @extend %align-center;
     padding-left: 10rem;
     pointer-events: none;
+    width: 50%;
 }
 
 .personalBodyAboutButton {
@@ -47,8 +51,9 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     padding: 1.2rem 2rem;
-    width: 10rem;
+    width: 18rem;
     margin-top: 5rem;
+    margin-left: -8rem;
     cursor: pointer;
     position: relative;
     transition: color 0.4s linear;
@@ -56,7 +61,8 @@
 
     &>i {
         @extend %align-center;
-        margin-left: 0.5rem;
+        font-size: 1.7rem !important;
+        margin-left: 0.8rem;
     }
 
     &::before {
@@ -93,8 +99,13 @@
 @media only screen and (max-width: 599px) {
 
     .personalWebSiteBodyContentLeft {
+        width: 100%;
         font-size: 3rem;
         margin: 3rem 2rem 0 0rem;
+    }
+
+    .personalBodyAboutButton {
+        margin-left: 0rem;
     }
 
     .personalWebSiteBodyContent {
@@ -104,6 +115,7 @@
     .personalWebSiteBodyContentRight {
         padding-left: 0;
         margin-bottom: 2rem;
+        margin-top: 3rem;
 
         &>img {
             height: 25rem !important;

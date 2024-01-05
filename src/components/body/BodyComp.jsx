@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../scss/styles.scss'
-import { FiMoreHorizontal } from "react-icons/fi";
+import { IoDownloadOutline } from "react-icons/io5";
 import { useLang } from '../../context/LangContext';
 
 const BodyComp = () => {
@@ -19,10 +19,10 @@ const BodyComp = () => {
                             <br />
                             {lang === 'en' ? "I'm a Frontend Developer." : "Ben Frontend Developer'ım"}
                         </b>
-                        <a href='#about' className='aboutButton personalBodyAboutButton'>{lang === "en" ? "More" : "Devamı"}<i><FiMoreHorizontal /></i></a>
+                        <a href='/images/FatihTanrıverdiCV.pdf' download="Fatih_Tanrıverdi_CV.pdf" className='aboutButton personalBodyAboutButton'><b>{lang === "en" ? "DOWNLOAD CV" : "CV'Yİ İNDİR"}</b><i><IoDownloadOutline /></i></a>
                     </div>
                     <div className='personalWebSiteBodyContentRight'>
-                        <img src='/images/avatar_hello.png' alt='' />
+                        <img src='/images/avatar_hello.png' alt='Avatar_Hello'/>
                     </div>
                 </div>
             </div>

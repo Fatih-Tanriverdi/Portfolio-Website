@@ -22,6 +22,7 @@ const SkillsComp = () => {
                     <div className='personalWebSiteSkillsContentProgressCard'>
                         <div className='personalWebSiteSkillsContentProgressCardLeft'>
                             <Progress
+                                className='customProgressBar'
                                 type="dashboard"
                                 size={125}
                                 percent={"80"}
@@ -45,6 +46,7 @@ const SkillsComp = () => {
                     <div className='personalWebSiteSkillsContentProgressCard'>
                         <div className='personalWebSiteSkillsContentProgressCardLeft'>
                             <Progress
+                                className='customProgressBar'
                                 type="dashboard"
                                 size={125}
                                 percent={"75"}
@@ -68,6 +70,7 @@ const SkillsComp = () => {
                     <div className='personalWebSiteSkillsContentProgressCard'>
                         <div className='personalWebSiteSkillsContentProgressCardLeft'>
                             <Progress
+                                className='customProgressBar'
                                 type="dashboard"
                                 size={125}
                                 percent={"45"}
@@ -91,6 +94,7 @@ const SkillsComp = () => {
                     <div className='personalWebSiteSkillsContentProgressCard'>
                         <div className='personalWebSiteSkillsContentProgressCardLeft'>
                             <Progress
+                                className='customProgressBar'
                                 type="dashboard"
                                 size={125}
                                 percent={"85"}
@@ -114,6 +118,7 @@ const SkillsComp = () => {
                     <div className='personalWebSiteSkillsContentProgressCard'>
                         <div className='personalWebSiteSkillsContentProgressCardLeft'>
                             <Progress
+                                className='customProgressBar'
                                 type="dashboard"
                                 size={125}
                                 percent={"65"}

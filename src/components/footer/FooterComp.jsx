@@ -26,7 +26,7 @@ const FooterComp = () => {
                 <div className='personalWebSiteFooterContentTop'>
                     <div className='personalWebSiteFooterContentBody'>
                         <h1>{lang === "en" ? "SAY HELLO" : "MERHADA DE"}</h1>
-                        <a href='/'><IoIosMail /><p>Mail</p></a>
+                        <a href='mailto:fmehmettanriverdi@gmail.com?subject=Konu&body' target='blank'><IoIosMail /><p>Mail</p></a>
                         <a href='https://github.com/Fatih-Tanriverdi/Arcanis'><FaMedium /><p>Medium</p></a>
                     </div>
                     <div className='personalWebSiteFooterContentBody'>

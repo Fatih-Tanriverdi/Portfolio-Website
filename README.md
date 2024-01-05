@@ -12,4 +12,12 @@ Bu proje, kişisel bilgilerimi ve çalışmalarımı paylaştığım özgeçmiş
 
 -------------------------------------
 
+![Admin Ana Sayfası](/public/images/Skills-Page.png)
+
+-------------------------------------
+
+![Admin Ana Sayfası](/public/images/Contact-Page.png)
+
+-------------------------------------
+
 ![Admin Ana Sayfası](/public/images/Footer-Page.png)

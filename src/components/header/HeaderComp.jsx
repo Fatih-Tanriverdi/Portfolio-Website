@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../scss/styles.scss'
+import React from 'react';
+import '../../scss/styles.scss';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useLang } from '../../context/LangContext';
@@ -16,9 +16,9 @@ const HeaderComp = () => {
                         <img src='/images/Website_Logo_Transparent.png' alt='Logo' />
                     </div>
                     <div className='personalWebSiteContentLinks'>
-                        <a className='home' href='#home'>{lang === "en" ? "Home" : "Anasayfa"}</a>
+                        <a className='home' href='#about'>{lang === "en" ? "About" : "Hakkımda"}</a>
                         <a href='#projects'>{lang === "en" ? "Projects" : "Projeler"}</a>
-                        <a href='#about'>{lang === "en" ? "About" : "Hakkımda"}</a>
+                        <a href='#skills'>{lang === "en" ? "Skills" : "Yetenetkler"}</a>
                         <a href='#contact'>{lang === "en" ? "Contact" : "İletişim"}</a>
                     </div>
                     <div className='dropdownMenuContainer'>

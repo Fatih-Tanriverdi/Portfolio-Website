@@ -48,7 +48,9 @@
 .personalWebSiteSkillsContentProgressCard {
 
     @extend %align-center;
-    height: 20rem;
+    flex-direction: row;
+    min-height: 20rem;
+    height: 100%;
     width: 75%;
     margin: 3rem;
     border-radius: 3rem;
@@ -98,4 +100,18 @@
 
 .ant-progress-text {
     color: #3a5065 !important;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .personalWebSiteSkillsContentProgressCard {
+        flex-direction: column;
+    }
+
+    .customProgressBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
 }
