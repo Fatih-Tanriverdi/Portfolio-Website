@@ -6,8 +6,7 @@
 }
 
 .personalWenSiteSkillsBody {
-    display: flex;
-    justify-content: center;
+    @extend %align-center;
     background-color: #3a5065;
     height: 100%;
     min-height: 50rem;

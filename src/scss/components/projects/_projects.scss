@@ -3,9 +3,7 @@
 }
 
 .personalWebSiteProjects {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    @extend %flex-around;
     flex-direction: column;
     position: relative;
     background-color: #3a5065;
@@ -66,7 +64,6 @@
 
 .personalWebSiteProjectsContentRight {
     margin-left: 55rem;
-    @extend %font-family;
     position: relative;
 
     &>h1 {
@@ -116,7 +113,6 @@
 
 .personalWebSiteProjectsContentNetflixLeft {
     margin-left: 55rem;
-    @extend %font-family;
 
     &>h1 {
         @extend %align-center;

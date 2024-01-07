@@ -23,7 +23,6 @@
 .personalWebSiteBodyContentLeft {
     @extend %align-center;
     flex-direction: column;
-    @extend %font-family;
     width: 50%;
     font-size: 3.5rem;
     color: #f0f1ec;

@@ -27,9 +27,7 @@
 }
 
 .personalWebSiteHeaderContent {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flex-around;
     flex-direction: row;
     width: 100%;
 }

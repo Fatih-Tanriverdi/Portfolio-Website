@@ -16,11 +16,10 @@
     align-items: flex-start;
 }
 
-%font-family {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Varela Round', sans-serif;
+%flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 %image-position {

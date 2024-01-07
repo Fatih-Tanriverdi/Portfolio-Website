@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import { FaArrowUp } from "react-icons/fa"
+import React, { useEffect } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+import $ from 'jquery';
 
 const ScrollButton = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleScroll = () => {
-        if (window.scrollY > 20) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
-
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        $(document).ready(() => {
+            $(window).scroll(() => {
+                if ($(window).scrollTop() > 20) {
+                    $('#scrollBtn').fadeIn();
+                } else {
+                    $('#scrollBtn').fadeOut();
+                }
+
+                if ($(window).scrollTop() === 0) {
+                    $('#scrollBtn').fadeOut();
+                }
+            });
+
+            $('#scrollBtn').click(() => {
+                $('html, body').animate(
+                    {
+                        scrollTop: 0,
+                    },
+                    800
+                );
+                return false;
+            });
+        });
     }, []);
 
     return (
-        <button
-            id="scrollBtn"
-            onClick={scrollToTop}
-            style={{ display: isVisible ? 'block' : 'none' }}
-        >
+        <button id="scrollBtn" style={{ display: 'none' }}>
             <FaArrowUp />
         </button>
     );
