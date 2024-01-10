@@ -26,7 +26,7 @@ const ContactComp = () => {
         setLoading(true);
 
         if (contactInfo.name === "" || contactInfo.email === "" || contactInfo.subject === "" || contactInfo.message === "") {
-            toast.error("Tüm alanları doldurmanız gerekmektedir.");
+            toast.error(lang === "en" ? "You need to fill out all the fields." : "Tüm alanları doldurmanız gerekmektedir. " );
         } else {
             try {
                 await addDoc(collection(db, 'contact'), {
@@ -36,7 +36,7 @@ const ContactComp = () => {
                     message: contactInfo.message
                 });
 
-                toast.success("Mesajınız başarıyla gönderildi.");
+                toast.success(lang === "en" ? "Your message has been successfully sent." : "Mesajınız başarıyla gönderildi.");
             } catch (error) {
                 console.error(error);
             }
