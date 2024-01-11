@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { useLang } from '../../context/LangContext.js';
-import { db, collection, addDoc } from '../../firebase/firebase.js';
 import { ClipLoader } from 'react-spinners';
 import { ToastContainer, toast } from 'react-toastify';
+import { useDispatch, useSelector } from 'react-redux';
+import { submitForm } from '../../redux/contactSlice.js';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactComp = () => {
 
     const { lang } = useLang();
-    const [loading, setLoading] = useState(false);
+    const dispatch = useDispatch();
+    const { loading } = useSelector((state) => state.contact);
     const [contactInfo, setContactInfo] = useState({
         name: "",
         email: "",
@@ -21,25 +23,14 @@ const ContactComp = () => {
         setContactInfo((prev) => ({ ...prev, [name]: value }));
     };
 
-    const submitForm = async (e) => {
+    const handleSubmitForm = async (e) => {
         e.preventDefault();
-        setLoading(true);
 
         if (contactInfo.name === "" || contactInfo.email === "" || contactInfo.subject === "" || contactInfo.message === "") {
-            toast.error(lang === "en" ? "You need to fill out all the fields." : "Tüm alanları doldurmanız gerekmektedir. " );
+            toast.error(lang === "en" ? "You need to fill out all the fields." : "Tüm alanları doldurmanız gerekmektedir. ");
         } else {
-            try {
-                await addDoc(collection(db, 'contact'), {
-                    name: contactInfo.name,
-                    email: contactInfo.email,
-                    subject: contactInfo.subject,
-                    message: contactInfo.message
-                });
-
-                toast.success(lang === "en" ? "Your message has been successfully sent." : "Mesajınız başarıyla gönderildi.");
-            } catch (error) {
-                console.error(error);
-            }
+            dispatch(submitForm(contactInfo));
+            toast.success(lang === "en" ? "Your message has been successfully sent." : "Mesajınız başarıyla gönderildi.");
         }
 
         setContactInfo({
@@ -48,7 +39,6 @@ const ContactComp = () => {
             subject: "",
             message: ""
         });
-        setLoading(false);
     };
 
     return (
@@ -132,7 +122,7 @@ const ContactComp = () => {
                                 )
                                 :
                                 (
-                                    <button onClick={submitForm}>
+                                    <button onClick={handleSubmitForm}>
                                         <b>
                                             {lang === "en"
                                                 ?
