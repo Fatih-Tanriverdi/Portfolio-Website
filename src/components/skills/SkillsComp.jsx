@@ -26,7 +26,7 @@ const SkillsComp = () => {
                                 type="dashboard"
                                 size={125}
                                 percent={"80"}
-                                strokeColor={"#182840"}
+                                strokeColor={"#cca478"}
                             />
                         </div>
                         <div className='personalWebSiteSkillsContentProgressCardRight'>
@@ -50,7 +50,7 @@ const SkillsComp = () => {
                                 type="dashboard"
                                 size={125}
                                 percent={"75"}
-                                strokeColor={"#182840"}
+                                strokeColor={"#cca478"}
                             />
                         </div>
                         <div className='personalWebSiteSkillsContentProgressCardRight'>
@@ -74,7 +74,7 @@ const SkillsComp = () => {
                                 type="dashboard"
                                 size={125}
                                 percent={"45"}
-                                strokeColor={"#182840"}
+                                strokeColor={"#cca478"}
                             />
                         </div>
                         <div className='personalWebSiteSkillsContentProgressCardRight'>
@@ -98,7 +98,7 @@ const SkillsComp = () => {
                                 type="dashboard"
                                 size={125}
                                 percent={"85"}
-                                strokeColor={"#182840"}
+                                strokeColor={"#cca478"}
                             />
                         </div>
                         <div className='personalWebSiteSkillsContentProgressCardRight'>
@@ -122,7 +122,7 @@ const SkillsComp = () => {
                                 type="dashboard"
                                 size={125}
                                 percent={"65"}
-                                strokeColor={"#182840"}
+                                strokeColor={"#cca478"}
                             />
                         </div>
                         <div className='personalWebSiteSkillsContentProgressCardRight'>

@@ -75,6 +75,7 @@
         text-decoration: none;
         color: #182840;
         margin-left: 1.5rem;
+        transition: all 0.2s ease-in-out;
 
         &:hover {
             color: #f0f1ec;
@@ -89,6 +90,7 @@
         border: none;
         background-color: #182840;
         color: #f0f1ec;
+        transition: all 0.2s ease-in-out;
 
         &.active {
             background-color: #182840;

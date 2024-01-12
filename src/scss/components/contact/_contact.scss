@@ -191,6 +191,24 @@
     margin-right: 8rem;
 }
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .personalWebSiteContactContentRight {
+
+        &>img {
+            height: 32rem;
+            width: 32rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .personalWebSiteContactContentButton {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: -8rem !important;
+    }
+}
+
 @media only screen and (max-width: 599px) {
     .personalWebSiteContactContent {
         flex-direction: column;

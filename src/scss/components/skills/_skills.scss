@@ -21,8 +21,12 @@
     flex-direction: column;
 
     &>h1 {
+        @extend %align-center;
+        flex-direction: column;
         margin: 3rem;
         color: #f0f1ec;
+        border-bottom: 0.4rem solid #cca478;
+        width: 90%;
 
         &>p {
             @extend %align-center;
@@ -45,21 +49,20 @@
 }
 
 .personalWebSiteSkillsContentProgressCard {
-
     @extend %align-center;
     flex-direction: row;
     min-height: 20rem;
     height: 100%;
-    width: 75%;
+    width: 90%;
     margin: 3rem;
     border-radius: 3rem;
-    background-color: #cca478;
+    background-color: #182840;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     &:hover {
         transition: all 0.3s ease-in-out;
-        border: 0.1rem solid #f0f1ec;
+        border: 0.1rem solid #cca478;
     }
 }
 
@@ -84,21 +87,23 @@
 
 .personalWebSiteSkillsContentProgressCardTitle {
     @extend %align-center;
+    border-bottom: 0.2rem solid #3a5065;
+    width: 90%;
 
     &>i {
-        color: #f0f1ec;
+        color: #cca478;
         font-size: 2rem;
         margin-top: 0.7rem;
         margin-right: 0.5rem;
     }
 
     &>h1 {
-        color: #f0f1ec;
+        color: #cca478;
     }
 }
 
 .ant-progress-text {
-    color: #3a5065 !important;
+    color: #f0f1ec !important;
 }
 
 
